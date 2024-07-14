@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayes' Theorem Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Bayes' Theorem Calculator for Medical Diagnostics</h2>
+        <form id="bayes-form">
+            <label for="prevalence">Prevalence of Disease (P(Disease)):</label>
+            <input type="number" id="prevalence" step="0.01" required>
+            
+            <label for="sensitivity">Sensitivity (P(Test+|Disease+)):</label>
+            <input type="number" id="sensitivity" step="0.01" required>
+            
+            <label for="specificity">Specificity (P(Test-|Disease-)):</label>
+            <input type="number" id="specificity" step="0.01" required>
+            
+            <button type="button" onclick="calculateBayes()">Calculate</button>
+        </form>
+        
+        <div class="result" id="result"></div>
+        <div class="error" id="error"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
