@@ -34,7 +34,7 @@ The Bayes' Theorem Calculator is a web application designed to assist medical pr
 ### Installation
 
 1. Clone the repository:
-   git clone 
+   git clone https://github.com/gitbiruk2010/Development-of-a-Diagnostic-Test-Probability-Calculator
    cd Development of a Diagnostic Test Probability Calculator
 2. Install Flask if you haven't already: pip install flask
 3. Run the app: python app.py
